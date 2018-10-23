@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <title></title>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>Hest er best, ingen protest!</h1>
+  </div><br>
+
+  <div class="bolkform">
+    <h2>Vil du bli medlem av HEBIP-klubben?</h2>
+    <p>Da er det bare å fylle ut skjemaet under her. Vi vil helst ha voksne medlemmer
+      med en passion for hest, så ikke kom hit om du ikke er det.</p>
+    <h3>MELD DEG INN UNDER!</h3>
+    <form class="fnavn_enavn" action="gratulerer.html">
+
+      <label for="fnavn">Fornavn</label>
+      <input type="text" name="fnavn" placeholder="Skriv fornavnet ditt" required>
+
+      <label for="enavn">Etternavn</label>
+      <input type="text" name="enavn" placeholder="Skriv etternavnet ditt" required><br><br>
+
+      <label for="alder">Hvilket år ble du født?</label>
+      <input list="alderliste" name="alder" placeholder="Velg år fra lista" required><br><br>
+      <datalist id="alderliste">
+        <option value="2008"></option>
+        <option value="2007"></option>
+        <option value="2006"></option>
+        <option value="2005"></option>
+        <option value="2004"></option>
+        <option value="2003"></option>
+        <option value="2002"></option>
+        <option value="2001"></option>
+        <option value="2000"></option>
+        <option value="1999"></option>
+        <option value="1998"></option>
+        <option value="1997"></option>
+        <option value="1996"></option>
+        <option value="1995"></option>
+        <option value="1994"></option>
+        <option value="1993"></option>
+        <option value="1992"></option>
+        <option value="1991"></option>
+        <option value="1990"></option>
+      </datalist>
+
+      <label for="medlemknapp">Er du medlem i HEBIP fra før av?</label><br><br>
+      <input type="radio" name="medlemknapp" value="medlem" required>Medlem
+      <input type="radio" name="medlemknapp" value="ikkemedlem" required>Ikke medlem <br><br>
+
+      <label for="brukernavn">Velg et brukernavn</label>
+      <input type="text" name="brukernavn" placeholder="Brukernavn" pattern=".{5,}" title="Brukernavnet må ha minst fem tegn" required><br><br>
+
+
+
+      <label for="passord1">Velg et passord</label>
+      <input type="password" name="passord1" id="passord1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Må ha minst åtte tegn, med minst én stor bokstav, én liten bokstav og minst ett tall" placeholder="********" required>
+
+      <label for="passord2">Gjenta passordet</label>
+      <input type="password" name="passord2" id="passord2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Må ha minst åtte tegn, med minst én stor bokstav, én liten bokstav og minst ett tall" placeholder="********" onkeyup="sjekkpassord(); return false;"
+        required><br><br>
+      <span id="bekreftpassord" class="bekreftpassord"></span><br><br>
+
+
+
+      <input type="submit" name="send" value="Send inn">
+      <input type="reset" name="reset" value="Nullstill">
+
+      <script src="index.js"></script>
+
+    </form>
+  </div>
+
+</body>
+
+</html>

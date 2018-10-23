@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <button onclick="document.getElementById('lys').src='pic_bulbon.gif'">Skru på lyset</button>
+
+    <img id="lys" src="pic_bulboff.gif" style="width:100px">
+
+    <button onclick="document.getElementById('lys').src='pic_bulboff.gif'">Skru av lyset</button>
+
+    <script>
+    function lysbryter(verdi) {
+      var bilde;
+
+      if(verdi) {
+        bilde = "pic_bulbon.gif";
+      } else {
+        bilde = "pic_bulboff.gif";
+      }
+      document.getElementById("lys").src = bilde;
+    }
+    </script>
+  </body>
+</html>

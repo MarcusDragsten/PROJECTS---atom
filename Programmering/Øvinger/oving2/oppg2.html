@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+
+      function minfunksjon() {
+      //  alder = document.getElementById('alder').value
+        var alder = document.getElementById("alder").value;
+
+        var svar;
+        if(alder > 17) {
+          svar = "Du er myndig"
+        } else {
+          svar= "Du er ikke myndig"
+        }
+
+        if(alder > 66 ) {
+          svar = "Du er dessuten pensjonist"
+
+        }
+
+        document.getElementById("myndig").innerHTML = svar;
+
+      }
+
+    </script>
+
+    <h1>Oppgave 2</h1>
+
+    Hvor gammel er du?: <input type="number" id="alder" /><br />
+
+    <button onclick="minfunksjon()">Trykk meg!</button><br />
+
+    <div id="myndig"></div>
+
+  </body>
+</html>

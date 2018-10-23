@@ -1,0 +1,61 @@
+<html>
+
+<body>
+  <h1>Find the hidden button and click it!</h1>
+  <p><b>How many buttons can you click in 15 seconds?</b></p>
+  <div>Timer: </div>
+  <div id="timerText"></div><br>
+  <div>Points: </div>
+  <div id="pointsText"></div>
+  <button id="theButton">The button</button>
+</body>
+<script>
+  let points = 0;
+  let pointsText = document.getElementById('pointsText');
+  pointsText.innerText = points;
+
+  let theButton = document.getElementById('theButton');
+  theButton.style.position = 'absolute';
+  // Hide theButton
+  theButton.style.visibility = 'hidden';
+  // Move theButton to a random position
+  theButton.style.left = Math.random() * 500 + 'px';
+  theButton.style.top = Math.random() * 500 + 'px';
+
+  // Show theButton when the mouse cursor is close to it
+  window.onmousemove = (event) => {
+    let rect = theButton.getBoundingClientRect();
+    let centerX = (rect.right + rect.left) / 2;
+    let centerY = (rect.bottom + rect.top) / 2;
+
+    // Calculate distance between mouse cursor and center of theButton
+    let distance = Math.sqrt(Math.pow(centerX - event.clientX, 2) + Math.pow(centerY - event.clientY, 2));
+
+    if (distance < 100 && theButton.style.visibility == 'hidden') {
+      theButton.style.visibility = 'visible';
+    }
+  }
+  theButton.onclick = () => {
+    points++;
+    document.getElementById('pointsText').innerText = points;
+    theButton.style.position = 'absolute';
+    // Hide theButton
+    theButton.style.visibility = 'hidden';
+
+    theButton.style.left = Math.random() * 500 + 'px';
+    theButton.style.top = Math.random() * 500 + 'px';
+  }
+
+  let timer = 15000;
+
+  let sekunder = Math.floor((timer % (1000 * 60)) / 1000);
+
+  setTimeout(() => {
+    alert('Tiden er ute, du fikk ' + points + ' poeng!');
+    location.reload();
+  }, timer);
+
+  document.getElementById('timerText').innerText = sekunder;
+</script>
+
+</html>

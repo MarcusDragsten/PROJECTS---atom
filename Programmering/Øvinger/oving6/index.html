@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+</head>
+<body>
+
+  <div>
+    Velg farge: <select id="colorSelection">
+      <option>Red</option>
+      <option>White</option>
+      <option>Black</option>
+      <option>Pink</option>
+    </select>
+
+    <label for="viskeUt">Visk ut tegnebrettet</label>
+    <button type="button" name="viskeUt" onclick="viskeUt()">Knapp</button>
+
+    <label for="fyllFarge">Fyll med valgt farge</label>
+    <button type="button" name="fyllFarge" onclick="fyllFarge()">Fyll</button>
+
+  </div><br>
+
+  <div id="drawingBoard" style="width: 600px; border-style: solid; border-width: 1; display: table;"></div><br>
+
+  <div id="vitser">
+
+  </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>

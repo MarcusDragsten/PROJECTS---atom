@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+
+      function minfunksjon() {
+        tall = document.getElementById('tall').value
+        var divisjon, dobbel, tredobbel, multiself;
+        divisjon = tall / 2;
+        dobbel = tall * 2;
+        tredobbel = tall * 3;
+        multiself = tall * tall
+
+        document.getElementById("svaret").innerHTML =
+        "Halvparten av tallet " + tall + " er " + divisjon + "," + " det dobbelte er " + dobbel + "," + " det tredoble er " + tredobbel + " og tallet ganget med seg selv er " + multiself + ".";
+
+      }
+
+    </script>
+
+    <h1>Oppgave 1</h1>
+
+    Ett tall: <input type="text" id="tall" /><br />
+
+    <button onclick="minfunksjon()">Test tallet!</button><br />
+
+    <div id="svaret"></div>
+
+  </body>
+</html>

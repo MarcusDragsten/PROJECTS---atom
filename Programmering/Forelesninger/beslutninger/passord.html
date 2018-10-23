@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+
+      function logginn() {
+
+        let brukernavn = document.getElementById("brukernavn").value;
+        let passord = document.getElementById("passord").value;
+
+        if( !(brukernavn == "drift" && passord == "123") ) {
+          document.getElementById("status").textContent =
+          "Beklager, feil brukernavn eller passord"
+
+        } else {
+         document.getElementById("status").textContent = "Gratulerer, du er logget inn!!!"
+        }
+      }
+
+
+
+    </script>
+
+    Brukernavn: <input type="text" id="brukernavn" /><br />
+    Passord: <input type="password" id="passord" /><br />
+
+    <button onclick="logginn()">Logg inn</button><br />
+
+    <div id="status"></div>
+
+
+
+  </body>
+</html>

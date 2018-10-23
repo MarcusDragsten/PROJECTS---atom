@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+
+      function minfunksjon() {
+        //alert("Hallo");
+        var lengde, bredde, areal;
+        lengde = document.getElementById("lengde").value;
+        bredde = document.getElementById("bredde").value;
+        areal = lengde * bredde;
+        document.getElementById("svaret").innerHTML = "Arealet av " + lengde + " og " + bredde + " er " + areal;
+      }
+
+    </script>
+
+    Lengde: <input type="text" id="lengde"><br />
+    Bredde: <input type="text" id="bredde"><br />
+
+    <button onclick="minfunksjon()">Regn ut arealet</button><br />
+
+    <div id="svaret"></div>
+
+  </body>
+</html>

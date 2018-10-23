@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+
+      function minfunksjon() {
+
+        var svar, tipp;
+        tipp = document.getElementById("hbu").value;
+
+        if(tipp == "H"){
+          svar = "Hjemme"
+        } else if(tipp == "B") {
+          svar = "Borte"
+        } else if(tipp == "U") {
+          svar = "Uavgjort"
+        } else {
+          svar = "Ugyldig svar"
+        } document.getElementById("HjemmeBorteUavgjort").innerHTML = svar;
+      }
+
+    </script>
+
+    <h1>Oppgave 3</h1>
+
+    Hva tipper du? Skriv inn H, B eller U.: <input type="text" id="hbu" /><br />
+
+    <button onclick="minfunksjon()">Trykk meg!</button><br />
+
+    <div id="HjemmeBorteUavgjort"></div>
+
+  </body>
+</html>

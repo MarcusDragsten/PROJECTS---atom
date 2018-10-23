@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="jquery.css">
+  </head>
+  <body>
+
+    <script>
+
+      $(document).ready(function(){
+        $("img").animate({
+          opacity: '0.5'
+        });
+      });
+
+      $(document).ready(function(){
+        $("[src]").hover(function(){
+          $(this).css("opacity", "1");
+          }, function(){
+            $(this).css("opacity", "0.5");
+        });
+      });
+
+      </script>
+
+    <img id="bilde1" src="https://www.bna.no/erez4/erez?src=blomqvist/38000/38750-2.tif&tmp=Medium&width=300&format=jpeg&quality=80" alt="bilde1">
+    <img id="bilde2" src="https://www.bondelaget.no/getfile.php/13833869-1247128947/Bilder%20fylker/Akershus/Landskap/vann%2C%20landskap.jpg%20%28300x168%29.jpg" alt="bilde2">
+    <img id="bilde3" src="http://jlkfoto.no/wp-content/uploads/galleries/post-130/thumbnails/20061209_JLK01601%20M%C3%B8len_JLK%20Foto.jpg" alt="bilde3">
+    <img id="bilde4" src="https://userscontent2.emaze.com/images/b2560e5f-de90-4cbd-b5c6-9d71f5453f39/5b3c479d5081030e89ab48ae6a05f66b.jpg" alt="bilde4">
+    <img id="bilde5" src="https://ulsansblogg.files.wordpress.com/2016/05/c3b6ppna-landskap.jpg?w=535" alt="bilde5">
+
+  </body>
+</html>

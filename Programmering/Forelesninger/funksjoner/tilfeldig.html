@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+
+      function lagtall() {
+        let min = parseInt(document.getElementById('minimum').value);
+        let max = parseInt(document.getElementById('maksimum').value);
+
+        document.getElementById('etTall').innerHTML =
+        Math.floor(Math.random() * (max - min) + min);
+      }
+
+    </script>
+
+    Minimum: <input type="text" id="minimum"><br>
+    Maksimum: <input type="text" id="maksimum"><br>
+    <button onclick="lagtall()">Nytt Tall</button><br>
+    <output id="etTall"></output>
+
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+
+  <h1>Oppgave 5</h1>
+
+  <p id="utdata"></p>
+
+  <script>
+    let tekst = "";
+    let x = 10;
+
+    while (x > 1) {
+      tekst += x + " green bottles, hanging on a wall," + '<br>' + x + " green bottles, hanging on a wall," + '<br>' +
+        "If 1 green bottle were to accidentaly fall" + '<br>' + "There'd be " + --x + " green bottles, hanging on the wall" + '<br><br>'
+    }
+    if (x == 1) {
+      tekst += x + " green bottle, hanging on a wall," + '<br>' + x + " green bottle, hanging on a wall," + '<br>' +
+        "If 1 green bottle were to accidentaly fall" + '<br>' + "There'd be " + --x + " green bottles, hanging on the wall" + '<br><br>'
+
+    }
+    document.getElementById("utdata").innerHTML = tekst;
+  </script>
+
+</body>
+
+</html>

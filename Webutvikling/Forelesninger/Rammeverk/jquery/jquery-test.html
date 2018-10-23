@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <script>
+
+      $().ready(function() {
+
+        $("#knapp1").click(function() {
+          $("#skjultavsnitt").hide();
+        });
+
+        $("#knapp2").click(function() {
+          $("#skjultavsnitt").show();
+        });
+
+        $("#lys").click(function(){
+          var src;
+          if ($(this).attr('src') == "pic_bulboff.gif") {
+            src = "pic_bulbon.gif";
+          } else {
+            src = "pic_bulboff.gif"
+          }
+          $("#lys").attr("src", src)
+        });
+
+      });
+
+      </script>
+
+      <button id="knapp1">Skjul avsnitt</button>
+      <button id="knapp2">Vis avsnitt</button>
+      <img id="lys" src="pic_bulboff.gif" alt="lyspære">
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris condimentum ut purus non efficitur. Maecenas nisl nunc, dictum at mauris non, porttitor posuere augue. Pellentesque ut dui in ipsum maximus ultrices. Quisque in vestibulum tortor. Morbi id blandit justo. Cras a erat erat. In ornare ornare risus nec commodo.
+</p>
+<p id="skjultavsnitt">
+Fusce pharetra id orci sed mattis. Aenean sodales, ipsum in porttitor pharetra, orci sapien commodo mauris, a elementum neque est non ipsum. Quisque bibendum in libero vitae tincidunt. Nullam dapibus, tellus eu ullamcorper volutpat, quam ex maximus felis, quis tincidunt risus massa vel orci. Phasellus nisl ex, cursus non lacinia vel, porttitor eget ipsum. Morbi mi nulla, tempor a nibh ut, venenatis viverra massa. Fusce vehicula arcu nisl, quis euismod diam sagittis eget. In accumsan ligula vel sem facilisis ultrices. Etiam turpis neque, egestas et porta sed, iaculis non ligula.
+</p>
+<p>
+Integer pulvinar commodo odio, sed luctus nisi facilisis in. Cras efficitur, diam ut aliquam malesuada, elit lacus ultricies risus, et imperdiet ligula urna non sem. Fusce tempus elementum lorem, commodo dapibus metus convallis eu. Duis sit amet mi finibus, dignissim enim sit amet, ullamcorper quam. Duis a nibh justo. Proin ut sem porttitor, aliquam velit non, vestibulum turpis. In dapibus enim luctus, scelerisque ante non, accumsan elit.
+</p>
+<p>
+Cras ut rutrum est, id cursus erat. Cras sit amet orci a tortor euismod accumsan. Donec vitae sapien sit amet nunc commodo cursus sed a eros. Fusce malesuada, nisi id sagittis rhoncus, nisi erat laoreet lectus, sit amet volutpat urna justo sit amet diam. Nulla sagittis, orci id pharetra ornare, arcu tortor vehicula dui, id dapibus nisl mauris ut lorem. Suspendisse potenti. Nulla facilisi. Proin in tellus efficitur, pharetra sem et, tristique ante. Quisque orci eros, iaculis sit amet faucibus et, fringilla id massa. Etiam odio justo, pretium in sem at, rutrum viverra orci.
+</p>
+<p>
+Aliquam nunc nisi, dictum eget ante sit amet, fringilla tincidunt nisi. In ullamcorper eget odio a lacinia. Sed porta diam est, sit amet egestas velit maximus eu. Maecenas eu interdum quam, ac finibus erat. Ut et mauris metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam volutpat imperdiet dignissim. Aliquam imperdiet efficitur orci nec varius.
+</p>
+
+  </body>
+</html>

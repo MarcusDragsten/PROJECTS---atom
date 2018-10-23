@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+
+      function sjekkVare() {
+
+        let matvare = document.getElementById("matvare").value;
+        matvare = matvare.toLowerCase();
+
+        let tekst;
+
+        switch(matvare) {
+          case "eple"
+           tekst = "Eple er en frukt";
+           break;
+          case "Selleri"
+           tekst = "Selleri er en grønnsak";
+           break;
+          case "banan"
+           tekst = "Banan er en urt";
+           break;
+          case "tomat"
+           tekst= "Tomat er et bær";
+           break;
+          default :
+           tekst = "Du har skrevet inn en ugyldig matvare";
+
+        }
+
+    /*    if(matvare == "eple") {
+          tekst = "Eple er en frukt;
+        }
+        if(matvare == "selleri") {
+          tekst = "Selleri er en grønnsak";
+        }
+        if(matvare == "banan") {
+          tekst = "Banan er en urt";
+        }
+        if(matvare == "tomat") {
+          tekst= "Tomat er et bær";
+        }
+        document.getElementById("utdata").textContent = tekst;
+
+*/
+      }
+
+    </script>
+
+    Skriv inn en matvare: <input type="text" id="matvare"></input><br />
+
+    <button onlclick="sjekkVare()">Hva slags vare er dette?</button>
+
+    <div id="utdata"></div>
+
+  </body>
+</html>

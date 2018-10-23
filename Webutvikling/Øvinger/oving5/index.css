@@ -1,0 +1,45 @@
+body {
+  background-image: url(https://amazingpict.com/wp-content/uploads/2014/02/Artistic-Horse-Background-Wallpaper.jpg);
+  background-size: cover;
+  text-align: center;
+  padding: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  width: 60%;
+  padding: 10px;
+  background-color: pink;
+  margin: auto;
+}
+
+.bolkform {
+  width: 60%;
+  padding: 10px;
+  background-color: pink;
+  margin: auto;
+}
+
+input[type=text] {
+  width: 30%;
+  padding: 6px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=password] {
+  width: 30%;
+  padding: 6px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: grey;
+  border: solid;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}

@@ -1,0 +1,104 @@
+body {
+  font-family: Arial;
+  padding: 10px;
+  margin: 0;
+  background-color: #eaeaea;
+}
+
+#navigering /* selve navigeringslista */{
+  position: sticky;
+  list-style-type: none;
+  margin: 0;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+  width: 100%;
+}
+
+#navigering a /* tekstobjektene i navigeringslista */{
+  text-decoration: none;
+  color: white;
+  float: left;
+  padding: 15px;
+  border-right: 1px solid #bbb;
+}
+
+#navigering a:last-child /* den siste linken har ikke en border til høyre */{
+  border-right: none;
+}
+
+#navigering a:hover /* skifter farge når man holder musa over objektet */{
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+#header {
+  width: 100%;
+  color: #00FFFF;
+  font-size: 3.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+  align-content: center;
+  background-image: url("https://mikesplumbing.com/wp-content/uploads/2015/04/Depositphotos_70964187_original.jpg");
+  background-size: 100%;
+}
+
+#logotekst {
+  width: 500px;
+  height: 100px;
+}
+
+#undertittel {
+  font-style: italic;
+  font-family: monospace;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  align-content: center;
+}
+
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width:
+    display: block;
+    margin: auto;
+}
+
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.footer {
+  position: sticky;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0.7em;
+  background-color: lightgrey;
+  text-align: center;
+}
+
+#hover:hover {
+  background-color: yellow;
+}

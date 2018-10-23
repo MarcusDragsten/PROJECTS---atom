@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+
+      function sjekkAlder() {
+
+        let alder = document.getElementById("alder").value;
+        let tekst; // = (alder >= 18) ? "Du er myndig siden du er over 18 år" : "Du er ikke myndig"
+
+        if(isNaN(alder)) {
+          tekst = "Du er nødt til å skrive inn et tall din fjott"
+        } else {
+
+         if(alder >= 18) {
+        tekst = "Du er myndig siden du er over 18 år"
+
+        } else {
+          tekst = "Du er ikke myndig"
+        }
+      }
+
+        document.getElementById("utdata").textContent = tekst;
+      }
+
+    </script>
+
+    Alder: <input type="text" id="alder" /><br />
+
+    <button onclick="sjekkAlder()">Er denne personen myndig?</button>
+
+    <div id=utdata></div>
+
+  </body>
+</html>

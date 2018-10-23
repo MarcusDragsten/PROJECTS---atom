@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="kontakt.css" media=screen />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <div id="navigering">
+      <a href="http://folk.ntnu.no/marcuskd/wu1/oving3/rorogrotHJEM.html">HJEM</a>
+      <a href="http://folk.ntnu.no/marcuskd/wu1/oving3/rorogrot%C3%85PNINGSTIDER.html">ÅPNINGSTIDER</a>
+      <a href="http://folk.ntnu.no/marcuskd/wu1/oving3/rorogrotANBEFALINGER.html">ANBEFALINGER</a>
+      <a class="active" href="http://folk.ntnu.no/marcuskd/wu1/oving3/rorogrotKONTAKT.html">KONTAKT</a>
+      <a href="http://folk.ntnu.no/marcuskd/wu1/oving3/rorogrotOMOSS.html" style="float:right">OM OSS</a>
+    </div>
+
+    <h1 id="header"><img id="logotekst" src="https://images.cooltext.com/5195283.png" alt="Logotekst"></h1>
+
+    <h2 id="undertittel">KONTAKT</h2>
+
+    <script>
+
+      function myFunction() {
+
+        fnavn = document.getElementById("fnavn").value;
+        enavn = document.getElementById("enavn").value;
+
+        document.getElementById("utdata").innerHTML =
+        "Hei " + fnavn + " " + enavn + ", takk for at du vil kontakte oss. Gjerne ta kontakt gjennom epost, på epostadressen: " + "<b>marcuskd@hotmail.com</b>";
+      }
+
+    </script>
+
+<div class="row">
+  <div class="column">
+    <h3>Gjerne fyll inn navnet ditt så du kan komme i kontakt med oss!</h3>
+    <b>Fornavn*</b><br />
+    <input type="text" id="fnavn" /><br />
+    <b>Etternavn*</b><br />
+    <input type="text" id="enavn" /><br />
+    <button onclick="myFunction()">Kontakt</button><br />
+  </div>
+  <div class="column">
+    <div id="utdata"></div>
+  </div>
+</div>
+
+    <div class="footer">
+      <span>&copy;Rør&Rot AS | </span>
+      <span id="hover" class="fa fa-facebook-official"></span>
+      <span id="hover" class="fa fa-instagram"></span>
+      <span id="hover" class="fa fa-twitter-square"></span>
+    </div>
+
+  </body>
+</html>

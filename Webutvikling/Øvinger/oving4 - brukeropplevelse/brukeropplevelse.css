@@ -1,0 +1,76 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #696c70;
+  padding: 10px;
+}
+
+div {
+  padding: 8px;
+}
+
+.header {
+  width: 70%;
+  background-color: #404244;
+  text-decoration: none;
+  text-align: center;
+  align-content: center;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  color: white;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+.headers {
+  color: white;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
+p {
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+.shortcut {
+  content: "";
+  display: table;
+  clear: both;
+  margin: auto;
+}
+
+.anker {
+  background-color: grey;
+  float: left;
+  text-align: center;
+  width: inherit;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.intro {
+  width: 70%;
+  background-color: #404244;
+  text-decoration: none;
+  text-align: center;
+  align-content: center;
+  margin: auto;
+}
+
+.oppgavebolk {
+  width: 70%;
+  background-color: #404244;
+  text-decoration: none;
+  text-align: center;
+  align-content: center;
+  margin: auto;
+}
+
+.headeroppg {
+  text-decoration: underline;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+
+      function minfunksjon() {
+
+        var alder = document.getElementById("alder").value;
+        var km = document.getElementById("km").value;
+
+        var svar;
+          if(alder < 13) {
+          svar = ((km * 3.52) / 2)
+        } else if(alder > 66)  {
+          svar= (km * 3.52 * 0.80)
+        } else {
+          svar = (km * 3.52)
+        } document.getElementById("pris").innerHTML = svar;
+      }
+
+    </script>
+
+    <h1>Oppgave 6</h1>
+
+    Hvor gammel er du?: <input type="number" id="alder" /><br />
+    Hvor mange kilometer reiser du?: <input type="number" id="km" /><br />
+
+    <button onclick="minfunksjon()">Få pris!</button><br />
+
+    <div id="pris"></div>
+
+  </body>
+</html>

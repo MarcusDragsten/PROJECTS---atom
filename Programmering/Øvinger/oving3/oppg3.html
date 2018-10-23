@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+
+  <h1>Oppgave 3</h1>
+
+  <input type="number" id="starttall"></input><br />
+  <input type="number" id="sluttall"></input><br />
+
+  <button onclick="myFunction()">Trykk her</button><br>
+
+  <div id="utdata"></div>
+
+  <script>
+    function myFunction() {
+
+      let text = "";
+      let x = document.getElementById("starttall").value;
+      let y = document.getElementById("sluttall").value;
+
+      while (x <= y) {
+        text += 'Jeg er tall nummer ' + x + '<br />';
+        x++;
+      }
+      document.getElementById("utdata").innerHTML = text;
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+
+      function gjenta() {
+        document.getElementById("utdata").innerHTML =
+        document.getElementById("inndata").value;
+
+      }
+
+    </script>
+
+    <input type="text" id="inndata" oninput="gjenta()" /><br />
+    <div id="utdata"></div>
+
+  </body>
+</html>

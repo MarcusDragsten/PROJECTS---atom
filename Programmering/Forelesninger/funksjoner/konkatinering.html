@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+
+  Skriv inn fornavnet: <input type="text" id="fornavn" oninput="settSammen()"> <br>
+  Skriv inn etternavnet: <input type="text" id="etternavn" oninput="settSammen()"> <br>
+  <button onclick="nullstill()">Nullstill skjema</button><br>
+  <br>
+  <div id="utdata"></div>
+
+  <script>
+    function fornavnForst(fornavn, etternavn) {
+      let navn = fornavn + " " + etternavn;
+      return navn;
+    }
+
+    function etternavnForst(fornavn, etternavn) {
+      let navn = etternavn + ", " + fornavn;
+      return navn;
+    }
+
+    function settSammen() {
+      let fnavn = document.getElementById('fornavn').value;
+      let enavn = document.getElementById('etternavn').value;
+
+      document.getElementById('utdata').innerHTML =
+        fornavnForst(fnavn, enavn) + "<br>" +
+        etternavnForst(fnavn, enavn);
+    }
+
+    function nullstill() {
+      document.getElementById('fornavn').value = "";
+      document.getElementById('etternavn').value = "";
+      document.getElementById('utdata').innerHTML = "";
+    }
+  </script>
+
+</body>
+
+</html>

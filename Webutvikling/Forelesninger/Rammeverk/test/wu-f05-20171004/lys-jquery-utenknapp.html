@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+
+    <img id="lys" src="pic_bulboff.gif" style="width:100px">
+
+    <script>
+    $(function(){
+
+      $("#lys").click(function(){
+         var src = ($(this).attr('src') === 'pic_bulbon.gif')
+                  ? 'pic_bulboff.gif' : 'pic_bulbon.gif';
+
+         $(this).attr('src', src);
+      });
+    });
+    </script>
+
+  </body>
+</html>

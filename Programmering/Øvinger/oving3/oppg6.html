@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+
+  Skriv inn brukernavn her: <input type="text" id="bnavn"></input><br />
+  Skriv inn passord her: <input type="password" id="pord"></input><br />
+
+  <button onclick="myFunction()">Trykk her!</button><br />
+
+  <div id="utdata"></div>
+
+  <script>
+    let maks = 3;
+
+    function myFunction() {
+
+      let tekst;
+      let brukernavn = document.getElementById('bnavn').value;
+      let passord = document.getElementById('pord').value;
+
+      if (maks > 1) {
+
+        if ((brukernavn == "brukernavn" || brukernavn == "brukernavn2" || brukernavn == "brukernavn3") &&
+          (passord == "passord" || passord == "passord2" || passord == "passord3")) {
+          tekst = "Du er logget inn!"
+
+        } else {
+          tekst = "Du har " + --maks + " forsøk igjen";
+        }
+
+      } else {
+        alert("Beklager, du har brukt for mange innloggingsforsøk.")
+        tekst = "Beklager, du har brukt for mange innloggingsforsøk."
+      }
+
+      document.getElementById('utdata').innerHTML = tekst;
+
+    }
+  </script>
+
+</body>
+
+</html>

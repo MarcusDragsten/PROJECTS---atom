@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+
+  <h1>Oppgave 4</h1>
+
+  <div id="gt"></div>
+
+  <script>
+    let tekst = "<table style = 'width:500px'>";
+
+    for (let i = 10; i <= 19; i++) {
+      tekst += "<tr>";
+      for (let j = 10; j <= 19; j++) {
+        tekst += "<td>" + i * j + "</td>";
+      }
+      tekst += "</tr>";
+    }
+    tekst += "</table>";
+    document.getElementById("gt").innerHTML = tekst;
+  </script>
+
+</body>
+
+</html>

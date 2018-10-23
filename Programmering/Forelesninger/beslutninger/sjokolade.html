@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script>
+
+      function sjekkSjokolade() {
+
+        let avkrysset = document.getElementById("sjokolade").checked;
+        let tekst;
+
+        if(avkrysset) {
+          //document.getElementById("utdata").textContent =
+          tekst = "Brukeren vil ha sjokoladestrø";
+        } else {
+          //document.getElementById("utdata").textContent =
+          tekst = "Brukeren vil ikke ha sjokoladestrø";
+        }
+        document.getElementById("utdata").textContent = tekst;
+      }
+
+
+    </script>
+
+    <input type="checkbox" id="sjokolade"> Sjokoladestrø <br />
+
+    <button onlclick="sjekkSjokolade()">Har brukeren valgt sjokoladestrø?</button><br />
+
+    <div id="utdata"></div>
+
+  </body>
+</html>

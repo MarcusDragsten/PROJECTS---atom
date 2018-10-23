@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+
+  <h1>Oppgave 2</h1>
+
+  <div id="utdata"></div>
+
+  <script>
+    let text = "";
+    let x = 12;
+
+    while (x <= 98) {
+
+      text += 'Jeg er tall nummer ' + x + '<br />';
+      x += 5;
+    }
+    document.getElementById("utdata").innerHTML = text;
+  </script>
+
+  <p>
+    Det siste tallet som skrives er 97, fordi det er hva som går opp når man legger til 5 til 12, fra tallene 12 til 98.
+  </p>
+
+</body>
+
+</html>

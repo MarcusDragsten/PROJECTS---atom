@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    Lengde (0-10):
+    <input type="range" min="0" max="100" id="lengde" oninput="beregn()">
+    <output id="valgtlengde"></output><br>
+    Bredde (0-10):
+    <input type="range" min="0" max="100" id="bredde" oninput="beregn()">
+    <output id="valgtbredde"></output><br>
+    Høyde (0-10):
+    <input type="range" min="0" max="100" id="hoyde" oninput="beregn()">
+    <output id="valgthoyde"></output><br>
+
+    <br>
+    <output id="svar"></output>
+
+    <script>
+
+      beregn();
+
+      function volum(len,bre,hoy) {
+        return len*bre*hoy;
+      }
+
+      function overflate(l,b,h) {
+        return 2*l*b + 2*l*h + 2*b*h;
+      }
+
+      function beregn() {
+        let l = document.getElementById('lengde').value / 10;
+        let b = document.getElementById('bredde').value / 10;
+        let h = document.getElementById('hoyde').value / 10;
+
+        document.getElementById('valgtlengde').innerHTML = l;
+        document.getElementById('valgtbredde').innerHTML = b;
+        document.getElementById('valgthoyde').innerHTML = h;
+
+        document.getElementById('svar').innerHTML =
+          "Voumet av boksen er " + volum(l,b,h) + "<br>" +
+          "Overflaten til boksen er " + overflate(l,b,h);
+
+        volum(l,b,h)
+        overflate(l,b,h)
+      }
+
+    </script>
+
+  </body>
+</html>
