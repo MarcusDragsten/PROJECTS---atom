@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Spill</title>
+</head>
+
+<body onload="skjulDiver()">
+
+  <canvas id="bakgrunn"></canvas>
+
+  <i class="fa fa-gear" id="tannhjul" onclick="tilInnstillinger()"></i>
+
+  <h1>asndajsndka</h1>
+
+  <div class="layout" id="meny">
+
+    <div class="menyDiv">
+      <div id="knappVenstre">
+        <button type="button" class="menyKnapper btn btn-outline-primary name" onclick="tilVanskelighetsgrad()">Start Spill</button>
+      </div>
+      <div id="knappHoyre">
+        <button type="button" class="menyKnapper btn btn-outline-primary name" onclick="tilHighscore()">Highscores</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="layout" id="vanskelighetsgrad">
+
+  </div>
+
+  <div class="layout" id="highscore">
+
+  </div>
+
+  <div class="layout" id="innstillinger">
+
+  </div>
+
+  <div class="layout" id="spillbrett1">
+
+    <div class="memoryCard" data-framework="marcus">
+      <img class="frontFace" src="frontface.jpg" alt="Stein Meisingseth">
+      <img class="backFace" src="backface.jpg" alt="Sjetne IL">
+    </div>
+
+    <div class="memoryCard" data-framework="marcus">
+      <img class="frontFace" src="frontface.jpg" alt="Stein Meisingseth">
+      <img class="backFace" src="backface.jpg" alt="Sjetne IL">
+    </div>
+
+    <div class="memoryCard" data-framework="lars">
+      <img class="frontFace" src="frontface.jpg" alt="Stein Meisingseth">
+      <img class="backFace" src="backface.jpg" alt="Sjetne IL">
+    </div>
+
+    <div class="memoryCard" data-framework="lars">
+      <img class="frontFace" src="frontface.jpg" alt="Stein Meisingseth">
+      <img class="backFace" src="backface.jpg" alt="Sjetne IL">
+    </div>
+
+    <div class="memoryCard" data-framework="stein">
+      <img class="frontFace" src="frontface.jpg" alt="Stein Meisingseth">
+      <img class="backFace" src="backface.jpg" alt="Sjetne IL">
+    </div>
+
+    <div class="memoryCard" data-framework="stein">
+      <img class="frontFace" src="frontface.jpg" alt="Stein Meisingseth">
+      <img class="backFace" src="backface.jpg" alt="Sjetne IL">
+    </div>
+
+    <div class="memoryCard" data-framework="stein">
+      <img class="frontFace" src="frontface.jpg" alt="Stein Meisingseth">
+      <img class="backFace" src="backface.jpg" alt="Sjetne IL">
+    </div>
+
+    <div class="memoryCard" data-framework="stein">
+      <img class="frontFace" src="frontface.jpg" alt="Stein Meisingseth">
+      <img class="backFace" src="backface.jpg" alt="Sjetne IL">
+    </div>
+
+    <div class="memoryCard" data-framework="stein">
+      <img class="frontFace" src="frontface.jpg" alt="Stein Meisingseth">
+      <img class="backFace" src="backface.jpg" alt="Sjetne IL">
+    </div>
+
+    <div class="memoryCard" data-framework="stein">
+      <img class="frontFace" src="frontface.jpg" alt="Stein Meisingseth">
+      <img class="backFace" src="backface.jpg" alt="Sjetne IL">
+    </div>
+
+    <div class="memoryCard" data-framework="stein">
+      <img class="frontFace" src="frontface.jpg" alt="Stein Meisingseth">
+      <img class="backFace" src="backface.jpg" alt="Sjetne IL">
+    </div>
+
+    <div class="memoryCard" data-framework="stein">
+      <img class="frontFace" src="frontface.jpg" alt="Stein Meisingseth">
+      <img class="backFace" src="backface.jpg" alt="Sjetne IL">
+    </div>
+
+    <div class="memoryCard" data-framework="stein">
+      <img class="frontFace" src="frontface.jpg" alt="Stein Meisingseth">
+      <img class="backFace" src="backface.jpg" alt="Sjetne IL">
+    </div>
+
+    <div class="memoryCard" data-framework="stein">
+      <img class="frontFace" src="frontface.jpg" alt="Stein Meisingseth">
+      <img class="backFace" src="backface.jpg" alt="Sjetne IL">
+    </div>
+
+    <div class="memoryCard" data-framework="stein">
+      <img class="frontFace" src="frontface.jpg" alt="Stein Meisingseth">
+      <img class="backFace" src="backface.jpg" alt="Sjetne IL">
+    </div>
+
+    <div class="memoryCard" data-framework="stein">
+      <img class="frontFace" src="frontface.jpg" alt="Stein Meisingseth">
+      <img class="backFace" src="backface.jpg" alt="Sjetne IL">
+    </div>
+
+  </div>
+
+  <div class="layout" id="spillbrett2">
+
+  </div>
+
+  <script type="text/javascript" src="scripts.js"></script>
+
+</body>
+
+</html>

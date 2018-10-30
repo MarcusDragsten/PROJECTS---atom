@@ -1,0 +1,109 @@
+* {
+  font-family: 'MedievalSharp', cursive;
+  font-size: 16px;
+  box-sizing: content-box;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: lightblue;
+  position: relative;
+}
+
+#bakgrunn {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+#tannhjul {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#tannhjul:hover {
+  -webkit-transform: rotate(1080deg);
+  -webkit-transition: -webkit-transform 5s;
+}
+
+h1 {
+  text-align: center;
+  border: 0;
+}
+
+.layout {
+  position: relative;
+  display: flex;
+  width: 60%;
+  height: 80%;
+  margin: auto;
+  border: solid orange 2px;
+  text-align: center;
+}
+
+#meny {
+
+}
+
+.menyKnapper {
+  height: 300px;
+  width: 230px;
+}
+
+.menyDiv {
+margin: auto;
+display: inline-block;
+}
+
+#knappHoyre {
+  float: right;
+  padding: 15px;
+}
+
+#knappVenstre {
+  float: left;
+  padding: 15px;
+}
+
+#spillbrett1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  perspective: 1000px;
+}
+
+.memoryCard {
+  width: 50%;
+  height: 70%;
+  display: flex;
+  margin-left: 40px; /* Prøv å fiks at det havne i midten */
+  align-self: center;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
+.memoryCard:active {
+  transform: scale(.97);
+  transition: transform .2s;
+}
+
+.frontFace {
+  transform: rotateY(180deg);
+}
+
+.frontFace, .backFace {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: block;
+}
+
+.memoryCard.flip {
+  transform: rotateY(180deg);
+}
